@@ -654,6 +654,7 @@
     border-radius: 18px;
     background: #FFF;
     box-shadow: 0 24px 32px -3px rgba(3, 9, 50, 0.04);
+    text-decoration: none;
 }
 
 .section-4-card .card-heading {
@@ -1360,6 +1361,12 @@
     border: 2px solid #EF7F1A;
     background-color: #fff;
     cursor: pointer;
+    text-decoration: none;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
 }
 
 .maps iframe {
