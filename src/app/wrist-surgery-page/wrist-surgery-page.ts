@@ -170,7 +170,8 @@ export class WristSurgeryPage {
       patient_name: this.appointmentForm.value.patient_name,
       mobile_number: this.appointmentForm.value.mobile_number,
       location: this.userAddress || 'Location not available',
-      page_name: this.pageName
+      page_name: this.pageName,
+      domain_name: 'wristsurgery.in'
     };
 
     emailjs.send(
