@@ -1,0 +1,551 @@
+<div class="root-container">
+
+
+    <nav class="navbar">
+        <img src="/sapiens-clinic-logo.png" alt="Sapiens Clinic Logo">
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger" [class.active]="isMenuOpen" (click)="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <div class="cta-wrapper" [class.active]="isMenuOpen">
+            <div class="cta" (click)="closeMenu()">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                        <g clip-path="url(#clip0_19016_1402)">
+                            <path
+                                d="M10.7259 4.15351C10.6649 4.0951 10.5836 4.0625 10.4991 4.0625C10.4146 4.0625 10.3334 4.0951 10.2723 4.15351L2.72168 11.3666C2.68961 11.3973 2.6641 11.4342 2.64668 11.475C2.62927 11.5158 2.62032 11.5597 2.62037 11.6041L2.61914 18.3738C2.61914 18.7219 2.75742 19.0557 3.00355 19.3019C3.24968 19.548 3.5835 19.6863 3.93158 19.6863H7.87302C8.04706 19.6863 8.21397 19.6171 8.33703 19.4941C8.4601 19.371 8.52924 19.2041 8.52924 19.0301V13.4522C8.52924 13.3652 8.56381 13.2817 8.62534 13.2202C8.68687 13.1586 8.77033 13.1241 8.85735 13.1241H12.1385C12.2255 13.1241 12.3089 13.1586 12.3705 13.2202C12.432 13.2817 12.4666 13.3652 12.4666 13.4522V19.0301C12.4666 19.2041 12.5357 19.371 12.6588 19.4941C12.7818 19.6171 12.9487 19.6863 13.1228 19.6863H17.0626C17.4107 19.6863 17.7445 19.548 17.9906 19.3019C18.2367 19.0557 18.375 18.7219 18.375 18.3738V11.6041C18.3751 11.5597 18.3661 11.5158 18.3487 11.475C18.3313 11.4342 18.3058 11.3973 18.2737 11.3666L10.7259 4.15351Z"
+                                fill="#EF7F1A" />
+                            <path
+                                d="M20.1342 10.0136L17.0663 7.07864V2.62494C17.0663 2.4509 16.9972 2.28399 16.8741 2.16092C16.7511 2.03786 16.5841 1.96872 16.4101 1.96872H14.4414C14.2674 1.96872 14.1005 2.03786 13.9774 2.16092C13.8543 2.28399 13.7852 2.4509 13.7852 2.62494V3.93739L11.4097 1.66604C11.1874 1.44128 10.8568 1.3125 10.4996 1.3125C10.1436 1.3125 9.81384 1.44128 9.59155 1.66645L0.867897 10.0128C0.612791 10.2589 0.5808 10.6637 0.812938 10.9303C0.871232 10.9975 0.942608 11.0523 1.02272 11.0911C1.10284 11.1299 1.19002 11.152 1.27895 11.1561C1.36789 11.1602 1.45672 11.1461 1.54005 11.1148C1.62337 11.0834 1.69945 11.0354 1.76364 10.9737L10.274 2.8415C10.3351 2.78309 10.4163 2.75048 10.5008 2.75048C10.5853 2.75048 10.6666 2.78309 10.7276 2.8415L19.2388 10.9737C19.3642 11.094 19.5321 11.1596 19.7058 11.1562C19.8795 11.1528 20.0447 11.0807 20.1653 10.9557C20.4172 10.6948 20.3962 10.2642 20.1342 10.0136Z"
+                                fill="#EF7F1A" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_19016_1402">
+                                <rect width="20.9991" height="20.9991" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <div class="info-heading">Evening OPD Consultation</div>
+                    <div class="info-content">Mon to sat 4:00 PM to 7:30 PM</div>
+                </div>
+            </div>
+
+            <div class="cta" (click)="closeMenu()">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path
+                            d="M8.7449 2.74366L9.95653 2.35666C11.0905 1.99441 12.3033 2.58054 12.7893 3.72579L13.7568 6.00729C14.1787 7.00066 13.9447 8.16954 13.1785 8.89629L11.0489 10.919C11.1805 12.1295 11.5867 13.3209 12.2684 14.4932C12.9162 15.6274 13.785 16.6201 14.8233 17.4125L17.3838 16.5575C18.3535 16.2347 19.4099 16.607 20.005 17.4812L21.391 19.5174C22.084 20.5344 21.9592 21.9362 21.1008 22.7979L20.1805 23.7215C19.2648 24.6407 17.9575 24.9748 16.747 24.5968C13.8907 23.7058 11.2649 21.0609 8.86865 16.6622C6.46903 12.2567 5.62303 8.51716 6.3284 5.44816C6.6254 4.15666 7.54565 3.12729 8.74715 2.74366H8.7449Z"
+                            fill="#EF7F1A" />
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <div class="info-heading">Phone Number</div>
+                    <div class="info-content">+91 78925 56378</div>
+                </div>
+            </div>
+
+            <div class="cta" (click)="closeMenu()">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                        <g clip-path="url(#clip0_19016_1421)">
+                            <path
+                                d="M20.446 0.833008H2.55707C2.21819 0.833008 1.89318 0.96763 1.65355 1.20726C1.41392 1.44689 1.2793 1.7719 1.2793 2.11079V14.8886C1.2793 15.2275 1.41392 15.5525 1.65355 15.7921C1.89318 16.0317 2.21819 16.1663 2.55707 16.1663H20.446C20.7849 16.1663 21.1099 16.0317 21.3495 15.7921C21.5891 15.5525 21.7237 15.2275 21.7237 14.8886V2.11079C21.7237 1.7719 21.5891 1.44689 21.3495 1.20726C21.1099 0.96763 20.7849 0.833008 20.446 0.833008ZM19.4621 14.8886H3.61763L8.08985 10.263L7.16985 9.37495L2.55707 14.1475V3.0819L10.4985 10.985C10.7379 11.2229 11.0617 11.3565 11.3993 11.3565C11.7369 11.3565 12.0607 11.2229 12.3001 10.985L20.446 2.88384V14.0644L15.7437 9.36217L14.8429 10.263L19.4621 14.8886ZM3.39402 2.11079H19.411L11.3993 10.0777L3.39402 2.11079Z"
+                                fill="#EF7F1A" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_19016_1421">
+                                <rect width="23" height="18" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <div class="info-heading">Email Us Here</div>
+                    <div class="info-content">sapiensclinic@gmail.com</div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay for mobile menu -->
+    <div class="overlay" [class.active]="isMenuOpen" (click)="closeMenu()">
+    </div>
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Wrist Surgery in Malleshwaram, Bangalore</h1>
+        </div>
+
+        <div class="hero-image">
+            <img src="/wrist-surgery-in-bangalore.png"
+                alt="Expert wrist surgery in Malleshwaram Bangalore by hand specialist">
+        </div>
+
+        <div class="bottom-wrapper">
+            <div class="banner-bottom">
+                <div class="banner-bottom-text">
+                    Expert wrist evaluation and surgical care by <span>Dr. Darshan Kumar A. Jain</span>, Orthopedic Hand
+                    & Upper-Limb Specialist
+                </div>
+                <!-- appointment-form.component.html -->
+                <form class="banner-cta" [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+                    <!-- Patient Name Field -->
+                    <div class="form-field">
+                        <input type="text" placeholder="Name" formControlName="patient_name"
+                            [class.invalid]="submitted && f['patient_name'].errors">
+                        <div class="error-message" *ngIf="submitted && f['patient_name'].errors">
+                            <small *ngIf="f['patient_name'].errors['required']">Name is required</small>
+                            <small *ngIf="f['patient_name'].errors['minlength']">Name must be at least 2
+                                characters</small>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Number Field -->
+                    <div class="form-field">
+                        <input type="text" placeholder="Mobile Number" formControlName="mobile_number" maxlength="10"
+                            [class.invalid]="submitted && f['mobile_number'].errors">
+                        <div class="error-message" *ngIf="submitted && f['mobile_number'].errors">
+                            <small *ngIf="f['mobile_number'].errors['required']">Mobile number is required</small>
+                            <small *ngIf="f['mobile_number'].errors['pattern']">Enter a valid 10-digit mobile
+                                number</small>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="book-btn" [disabled]="isSubmitting">
+                        {{ isSubmitting ? 'Booking...' : 'Book Appointment' }}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- What Is Wrist Surgery? -->
+
+    <section class="what-section">
+        <div class="section-2-left">
+            <h2>What Is Wrist Surgery?</h2>
+            <p class="para" style="margin-top: 30px;">Wrist surgery is performed to treat conditions that cause
+                persistent wrist pain, instability, stiffness,
+                or reduced hand function. The aim of wrist surgery is to relieve pain, improve wrist movement, and
+                restore strength and coordination of the hand and wrist.</p>
+            <p class="para" style="margin-top: 30px;">Depending on the condition, wrist surgery may involve repairing
+                ligaments, relieving nerve pressure,
+                correcting joint alignment, or addressing joint damage. Not all wrist problems require surgery—careful
+                evaluation is always the first step.</p>
+        </div>
+        <div class="section-2-right">
+
+            <div class="anime">
+                <div class="circle-1">
+                    <img src="/wrist-sugery-3.png" class="orbit orbit-1 pos-1" />
+                    <img src="/wrist-sugery-2.png" class="orbit orbit-1 pos-2" />
+                    <img src="/wrist-sugery-4.png" class="orbit orbit-1 pos-3" />
+
+                    <div class="circle-2">
+                        <img src="/wrist-sugery-1.png" class="orbit orbit-2 pos-4" />
+
+                        <div class="circle-3">
+                            <div class="circle-4">
+                                <img src="/wrist-surgery-at-sapiens-clinic-bangalore.png" class="center-img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Symptoms -->
+
+    <section class="symptoms-section">\
+
+        <h2>Symptoms – When to Visit <span>Sapiens Clinic</span></h2>
+
+        <div class="symptoms-wrapper">
+
+            <div class="symptom" *ngFor="let symptom of symptoms">
+                <div class="img-bg">
+                    <img [src]="symptom.img" [alt]="symptom.alt">
+                </div>
+                <h3 class="symptom-name">{{symptom.name}}</h3>
+            </div>
+
+        </div>
+
+        <p class="para symptoms-para">An early consultation with Dr. Darshan Kumar A. Jain, an experienced orthopedic
+            surgeon in Malleshwaram, Bangalore, Karnataka, helps determine the most appropriate wrist pain treatment.
+        </p>
+
+    </section>
+
+    <!-- Who Is This Surgery For? -->
+
+    <section class="who-is-this-for">
+
+        <div class="section-4-top">
+            <div class="section-4-top-left">
+                <!-- <img src="/advanced-wrist-surgery-by-dr-darshan-kumar-jain.png"
+                    alt="Advanced wrist surgery performed by hand and wrist specialist Bangalore"> -->
+                <video class="your-classname" autoplay muted loop playsinline preload="metadata">
+                    <source src="/wrist-surgery-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="section-4-top-right">
+                <h3>Who Is This Surgery For?</h3>
+                <p class="para">Wrist surgery may be considered for patients who:</p>
+                <ul>
+                    <li class="para">Have long-standing wrist pain not improving with medication or physiotherapy</li>
+                    <li class="para">Experience restricted wrist or hand movement affecting daily activities</li>
+                    <li class="para">Have wrist joint instability, ligament injuries, or repeated strain injuries</li>
+                    <li class="para">Show structural wrist damage on X-rays, MRI, or other imaging</li>
+                    <li class="para">Require stable wrist function for work, sports, or lifestyle demands</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-4-bottom">
+            <h3 class="section-4-bottom-heading">Wrist Surgeries We Perform</h3>
+            <div class="cards-row-1">
+                <div class="section-4-card">
+                    <h3 class="card-heading">Wrist Arthroscopy</h3>
+                    <p class="card-content">Minimally invasive wrist surgery used to diagnose and treat wrist joint
+                        conditions accurately.</p>
+                </div>
+                <div class="section-4-card">
+                    <h3 class="card-heading">Carpal Tunnel Release Surgery</h3>
+                    <p class="card-content">Surgical relief of nerve compression causing wrist pain, numbness, or
+                        tingling in the hand.</p>
+                </div>
+            </div>
+            <div class="cards-row-2">
+                <div class="section-4-card">
+                    <h3 class="card-heading">Ligament Repair or Reconstruction of Wrist</h3>
+                    <p class="card-content">Repair of injured wrist ligaments to restore joint stability and hand
+                        function.</p>
+                </div>
+                <div class="section-4-card">
+                    <h3 class="card-heading">Wrist Fracture Fixation</h3>
+                    <p class="card-content">Surgical alignment and stabilization of wrist fractures to support proper
+                        healing and movement.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- doctor section -->
+
+    <section class="doctor-section">
+        <div class="doc-section-left-side">
+            <h2>Dr. Darshan Kumar A. Jain</h2>
+            <h3 class="doc-designation">Orthopedic Hand & Microsurgery Specialist</h3>
+            <p class="doc-para">Dr. Darshan Kumar A. Jain is an experienced orthopedic surgeon specializing in hand,
+                wrist, elbow, and upper-limb conditions. He is known for managing complex wrist disorders with a strong
+                focus on precision, safety, and functional recovery. His approach emphasizes accurate diagnosis, clear
+                communication, and recommending wrist surgery only when it is clinically necessary. Patients value his
+                calm consultations, ethical decision-making, and patient-first care at Sapiens Clinic, Malleshwaram,
+                Bangalore, Karnataka.</p>
+            <ul class="about-doc-list">
+                <li>Specialized focus on <b>hand and wrist surgery</b></li>
+                <li style="margin-top: 10px;">Trusted by patients and families for ethical, transparent treatment</li>
+            </ul>
+            <button  (click)="scrollToForm()">Book Appointment</button>
+        </div>
+        <div class="doc-section-right-side">
+            <img src="/dr-darshan-kumar-a-jain.png"
+                alt="Dr Darshan Kumar A Jain wrist surgeon in Bangalore consultation portrait">
+
+            <div class="doc-float-card card-experience">
+                <div class="doc-circle-1">15+</div>
+                <div class="doc-card-content">
+                    Years of experience in orthopedic and upper-limb care
+                </div>
+            </div>
+
+            <div class="doc-float-card card-patients">
+                <div class="doc-circle-2">5000+</div>
+                <div class="doc-card-content">
+                    Patients treated across hand, wrist, and elbow conditions
+                </div>
+            </div>
+        </div>
+
+        <button class="book-at-btn-5" (click)="scrollToForm()">Book Appointment</button>
+
+    </section>
+
+
+    <!-- Wrist Surgery Procedure -->
+
+    <section class="wrist-surgery-procedure">
+        <h2>Wrist Surgery Procedure</h2>
+        <p class="surgery-section-description">How the Treatment Is Planned & Performed</p>
+
+        <div class="treatment-wrapper">
+            <div class="treatment-card" *ngFor="let treatment of treatmentProcedure">
+                <div class="icon-bg">
+                    <img [src]="treatment.image" [alt]="treatment.alt">
+                </div>
+                <div class="procedure-name">{{treatment.name}}</div>
+                <div class="procedure-description">{{treatment.description}}</div>
+            </div>
+            <div class="treatment-card" *ngFor="let treatment of treatmentProcedure">
+                <div class="icon-bg">
+                    <img [src]="treatment.image" [alt]="treatment.alt">
+                </div>
+                <div class="procedure-name">{{treatment.name}}</div>
+                <div class="procedure-description">{{treatment.description}}</div>
+            </div>
+            <div class="treatment-card" *ngFor="let treatment of treatmentProcedure">
+                <div class="icon-bg">
+                    <img [src]="treatment.image" [alt]="treatment.alt">
+                </div>
+                <div class="procedure-name">{{treatment.name}}</div>
+                <div class="procedure-description">{{treatment.description}}</div>
+            </div>
+        </div>
+
+        <div class="wrist-procedure-bottom">
+            <div class="procedure-left-side">
+                <h3>Recovery & Outcomes</h3>
+                <div class="para">What to Expect After Wrist Surgery</div>
+                <ul class="procedure-list">
+                    <li>Recovery timelines vary based on wrist condition, procedure type, and individual</li>
+                    <li>Gradual improvement in wrist movement and strength over </li>
+                    <li>Physiotherapy supports safe restoration of wrist and hand </li>
+                    <li>Regular follow-ups help guide healing and </li>
+                    <li>Outcomes depend on timely care and adherence to recovery plans</li>
+                </ul>
+            </div>
+            <div class="procedure-right-side">
+                <!-- <img src="/wrist-surgery-treatment-procedure.png"
+                    alt="Detailed wrist surgery treatment procedure in Bangalore orthopedic clinic"> -->
+
+                <video class="your-classname" autoplay muted loop playsinline preload="metadata">
+                    <source src="/wrist-surgery-procedure-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- understand the signs -->
+
+    <section class="understand-the-signs">
+        <h2>Understand the Signs. Plan the Right Wrist Treatment</h2>
+
+        <div class="signs-wrapper">
+            <div class="sign-card">
+                <h3 class="sign-name">Common Conditions Treated with Wrist Surgery</h3>
+                <ul class="sign-list">
+                    <li>Carpal tunnel syndrome</li>
+                    <li>Wrist ligament injuries</li>
+                    <li>Wrist fractures and joint instability</li>
+                    <li>Chronic wrist pain or stiffness</li>
+                    <li>Nerve compression conditions</li>
+                </ul>
+            </div>
+
+            <div class="sign-card">
+                <h3 class="sign-name">Benefits of Modern Wrist Surgery</h3>
+                <ul class="sign-list">
+                    <li>Improved wrist comfort and hand function</li>
+                    <li>Targeted wrist treatment using precise techniques</li>
+                    <li>Better pain control with structured recovery </li>
+                    <li>Guided return to daily activities and work</li>
+                </ul>
+            </div>
+
+            <div class="sign-card">
+                <h3 class="sign-name">How Wrist Surgery Is Performed</h3>
+                <p style="margin-top: 20px;">Wrist surgery uses carefully planned techniques based on the condition. The
+                    surgeon treats affected wrist structures while preserving healthy tissues, supporting safer
+                    procedures and smoother recovery.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="why-choose-us">
+        <div class="why-choose-us-left">
+            <div class="why">Why Choose</div>
+            <div class="clinic">Sapiens Clinic?</div>
+            <img src="/sapiens-clinic-malleshwaram-bangalore.png"
+                alt="Sapiens Clinic Malleshwaram Bangalore for wrist pain treatment">
+        </div>
+        <div class="why-choose-us-right">
+            <div class="why-choose-card" *ngFor="let a of whychooseus">
+                <div class="num">{{a.id}}</div>
+                <div class="why-choose-card-content">
+                    <div class="why-choose-name">{{a.name}}</div>
+                    <div class="why-choose-description">{{a.description}}</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQs -->
+
+    <section class="faqs-section">
+
+        <div class="faqs-left-side">
+            <h3>FAQs</h3>
+
+            <div class="accordion">
+                <div class="accordion-item" *ngFor="let faq of faqs; let i = index" [class.active]="activeIndex === i">
+                    <div class="accordion-header" (click)="toggle(i)">
+                        <div class="left">
+                            <span class="number" [class.active]="activeIndex === i">
+                                {{ (i + 1) }}
+                            </span>
+                            <div class="question">
+                                {{ faq.question }}
+                            </div>
+                        </div>
+
+                        <div class="icon">
+                            {{ activeIndex === i ? '×' : '+' }}
+                        </div>
+                    </div>
+
+                    <div class="accordion-body" *ngIf="activeIndex === i">
+                        {{ faq.answer }}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="faqs-right-side" #appointmentSection>
+            <!-- Callback Request Form - Reusing the same form variables -->
+            <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+                <div class="form-text">could not find what you are looking for?</div>
+                <h4>request a callback</h4>
+
+                <!-- Name Field -->
+                <div class="callback-field">
+                    <input type="text" placeholder="Name" formControlName="patient_name"
+                        [class.invalid]="submitted && f['patient_name'].errors">
+                    <div class="error-message-1" *ngIf="submitted && f['patient_name'].errors">
+                        <small *ngIf="f['patient_name'].errors['required']">Name is required</small>
+                        <small *ngIf="f['patient_name'].errors['minlength']">Name must be at least 2 characters</small>
+                    </div>
+                </div>
+
+                <!-- Mobile Number Field -->
+                <div class="callback-field">
+                    <input type="text" placeholder="mobile number" formControlName="mobile_number" maxlength="10"
+                        [class.invalid]="submitted && f['mobile_number'].errors">
+                    <div class="error-message-1" *ngIf="submitted && f['mobile_number'].errors">
+                        <small *ngIf="f['mobile_number'].errors['required']">Mobile number is required</small>
+                        <small *ngIf="f['mobile_number'].errors['pattern']">Enter a valid 10-digit mobile number</small>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="book-apt-2" [disabled]="isSubmitting">
+                    {{ isSubmitting ? 'Sending...' : 'Book an Appointment' }}
+                </button>
+            </form>
+        </div>
+
+    </section>
+
+
+    <!-- footer -->
+
+    <section class="footer">
+
+        <div class="footer-top">
+            <div class="sec-1 sec">
+                <img src="/sapiens-clinic-logo.png"
+                    alt="Sapiens Clinic logo for wrist surgery in Malleshwaram Bangalore">
+
+                <div class="cta">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
+                            <g clip-path="url(#clip0_19016_1402)">
+                                <path
+                                    d="M10.7259 4.15351C10.6649 4.0951 10.5836 4.0625 10.4991 4.0625C10.4146 4.0625 10.3334 4.0951 10.2723 4.15351L2.72168 11.3666C2.68961 11.3973 2.6641 11.4342 2.64668 11.475C2.62927 11.5158 2.62032 11.5597 2.62037 11.6041L2.61914 18.3738C2.61914 18.7219 2.75742 19.0557 3.00355 19.3019C3.24968 19.548 3.5835 19.6863 3.93158 19.6863H7.87302C8.04706 19.6863 8.21397 19.6171 8.33703 19.4941C8.4601 19.371 8.52924 19.2041 8.52924 19.0301V13.4522C8.52924 13.3652 8.56381 13.2817 8.62534 13.2202C8.68687 13.1586 8.77033 13.1241 8.85735 13.1241H12.1385C12.2255 13.1241 12.3089 13.1586 12.3705 13.2202C12.432 13.2817 12.4666 13.3652 12.4666 13.4522V19.0301C12.4666 19.2041 12.5357 19.371 12.6588 19.4941C12.7818 19.6171 12.9487 19.6863 13.1228 19.6863H17.0626C17.4107 19.6863 17.7445 19.548 17.9906 19.3019C18.2367 19.0557 18.375 18.7219 18.375 18.3738V11.6041C18.3751 11.5597 18.3661 11.5158 18.3487 11.475C18.3313 11.4342 18.3058 11.3973 18.2737 11.3666L10.7259 4.15351Z"
+                                    fill="#EF7F1A" />
+                                <path
+                                    d="M20.1342 10.0136L17.0663 7.07864V2.62494C17.0663 2.4509 16.9972 2.28399 16.8741 2.16092C16.7511 2.03786 16.5841 1.96872 16.4101 1.96872H14.4414C14.2674 1.96872 14.1005 2.03786 13.9774 2.16092C13.8543 2.28399 13.7852 2.4509 13.7852 2.62494V3.93739L11.4097 1.66604C11.1874 1.44128 10.8568 1.3125 10.4996 1.3125C10.1436 1.3125 9.81384 1.44128 9.59155 1.66645L0.867897 10.0128C0.612791 10.2589 0.5808 10.6637 0.812938 10.9303C0.871232 10.9975 0.942608 11.0523 1.02272 11.0911C1.10284 11.1299 1.19002 11.152 1.27895 11.1561C1.36789 11.1602 1.45672 11.1461 1.54005 11.1148C1.62337 11.0834 1.69945 11.0354 1.76364 10.9737L10.274 2.8415C10.3351 2.78309 10.4163 2.75048 10.5008 2.75048C10.5853 2.75048 10.6666 2.78309 10.7276 2.8415L19.2388 10.9737C19.3642 11.094 19.5321 11.1596 19.7058 11.1562C19.8795 11.1528 20.0447 11.0807 20.1653 10.9557C20.4172 10.6948 20.3962 10.2642 20.1342 10.0136Z"
+                                    fill="#EF7F1A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_19016_1402">
+                                    <rect width="20.9991" height="20.9991" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-heading">Evening OPD Consultation</div>
+                        <div class="info-content">Mon to sat 4:00 PM to 7:30 PM</div>
+                    </div>
+                </div>
+
+                <div class="cta">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                            <path
+                                d="M8.7449 2.74366L9.95653 2.35666C11.0905 1.99441 12.3033 2.58054 12.7893 3.72579L13.7568 6.00729C14.1787 7.00066 13.9447 8.16954 13.1785 8.89629L11.0489 10.919C11.1805 12.1295 11.5867 13.3209 12.2684 14.4932C12.9162 15.6274 13.785 16.6201 14.8233 17.4125L17.3838 16.5575C18.3535 16.2347 19.4099 16.607 20.005 17.4812L21.391 19.5174C22.084 20.5344 21.9592 21.9362 21.1008 22.7979L20.1805 23.7215C19.2648 24.6407 17.9575 24.9748 16.747 24.5968C13.8907 23.7058 11.2649 21.0609 8.86865 16.6622C6.46903 12.2567 5.62303 8.51716 6.3284 5.44816C6.6254 4.15666 7.54565 3.12729 8.74715 2.74366H8.7449Z"
+                                fill="#EF7F1A" />
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-heading">Phone Number</div>
+                        <div class="info-content">+91 78925 56378</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sec-2 sec">
+                <h2 class="footer-doc-name">Dr. Darshan Kumar A. Jain</h2>
+                <p class="doc-qualification">MBBS, MS Ortho (KMC Manipal), FNB, Clinical Fellow National University
+                    Hospital, (Singapore), MNAMS, PGDHHM, Diploma in Tissue Banking (Singapore)</p>
+
+                <div class="footer-btns">
+                    <button class="book-apt-3" (click)="scrollToForm()">Book Appointment</button>
+                    <button class="viewmore">View More</button>
+                </div>
+            </div>
+
+            <div class="sec-3 sec">
+                <div class="maps">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3887.420136387288!2d77.571521!3d13.008896!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae172329d41e0b%3A0x415cd1c76d7ec943!2sDr%20Darshan%20Kumar%20A.%20Jain%20(Hand%20Surgeon)!5e0!3m2!1sen!2sin!4v1768931668806!5m2!1sen!2sin"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="address">
+                    <img src="/address.png" alt="Clinic address location for wrist surgery in Malleshwaram Bangalore">
+                    <div class="addres-text">18/3, 1st Main Ranganathapura 18th cross, entrance, opposite Sankey tank,
+                        Malleshwaram, Bengaluru, Karnataka 560003.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="row-1">
+                <!-- <a href="">Privacy Policy</a>
+                <a href="">Terms of Use</a> -->
+                <a href="https://maps.app.goo.gl/qV7nqgmqEcpkXTeDA">Parking Location</a>
+                <a href="https://maps.app.goo.gl/AacBxcD9GM5bwSQAA">Clinic Map</a>
+            </div>
+            <p class="copyright">© 2026 All Rights Reserved</p>
+        </div>
+
+    </section>
+</div>
