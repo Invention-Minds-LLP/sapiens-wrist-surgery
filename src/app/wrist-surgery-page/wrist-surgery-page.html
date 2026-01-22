@@ -12,7 +12,7 @@
         </div>
 
         <div class="cta-wrapper" [class.active]="isMenuOpen">
-            <div class="cta" (click)="closeMenu()">
+            <!-- <div class="cta" (click)="closeMenu()">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
                         <g clip-path="url(#clip0_19016_1402)">
@@ -34,7 +34,7 @@
                     <div class="info-heading">Evening OPD Consultation</div>
                     <div class="info-content">Mon to sat 4:00 PM to 7:30 PM</div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="cta" (click)="closeMenu()">
                 <div class="icon">
@@ -45,12 +45,42 @@
                     </svg>
                 </div>
                 <div class="contact-info">
-                    <div class="info-heading">Phone Number</div>
+                    <div class="info-heading">Sapiens Clinic</div>
                     <div class="info-content">+91 78925 56378</div>
                 </div>
             </div>
 
-            <div class="cta" (click)="closeMenu()">
+            <a href="https://www.fortishealthcare.com/doctors/dr-darshan-kumar-jain-14538" target="_blank" class="cta" (click)="closeMenu()">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path
+                            d="M8.7449 2.74366L9.95653 2.35666C11.0905 1.99441 12.3033 2.58054 12.7893 3.72579L13.7568 6.00729C14.1787 7.00066 13.9447 8.16954 13.1785 8.89629L11.0489 10.919C11.1805 12.1295 11.5867 13.3209 12.2684 14.4932C12.9162 15.6274 13.785 16.6201 14.8233 17.4125L17.3838 16.5575C18.3535 16.2347 19.4099 16.607 20.005 17.4812L21.391 19.5174C22.084 20.5344 21.9592 21.9362 21.1008 22.7979L20.1805 23.7215C19.2648 24.6407 17.9575 24.9748 16.747 24.5968C13.8907 23.7058 11.2649 21.0609 8.86865 16.6622C6.46903 12.2567 5.62303 8.51716 6.3284 5.44816C6.6254 4.15666 7.54565 3.12729 8.74715 2.74366H8.7449Z"
+                            fill="#EF7F1A" />
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <div class="info-heading">Fortis Hospital,</div>
+                    <div class="info-content">Cunningham Road</div>
+                    <div class="info-content">+91 9686660310</div>
+                </div>
+            </a>
+
+            <a href="https://www.fortishealthcare.com/doctors/dr-darshan-kumar-jain-14538" target="_blank" class="cta" (click)="closeMenu()">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
+                        <path
+                            d="M8.7449 2.74366L9.95653 2.35666C11.0905 1.99441 12.3033 2.58054 12.7893 3.72579L13.7568 6.00729C14.1787 7.00066 13.9447 8.16954 13.1785 8.89629L11.0489 10.919C11.1805 12.1295 11.5867 13.3209 12.2684 14.4932C12.9162 15.6274 13.785 16.6201 14.8233 17.4125L17.3838 16.5575C18.3535 16.2347 19.4099 16.607 20.005 17.4812L21.391 19.5174C22.084 20.5344 21.9592 21.9362 21.1008 22.7979L20.1805 23.7215C19.2648 24.6407 17.9575 24.9748 16.747 24.5968C13.8907 23.7058 11.2649 21.0609 8.86865 16.6622C6.46903 12.2567 5.62303 8.51716 6.3284 5.44816C6.6254 4.15666 7.54565 3.12729 8.74715 2.74366H8.7449Z"
+                            fill="#EF7F1A" />
+                    </svg>
+                </div>
+                <div class="contact-info">
+                    <div class="info-heading">Fortis Hospital</div>
+                    <div class="info-content">Bannerghatta Road</div>
+                    <div class="info-content">+91 96633 67253</div>
+                </div>
+            </a>
+
+            <!-- <div class="cta" (click)="closeMenu()">
                 <div class="icon">
                     <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
                         <g clip-path="url(#clip0_19016_1421)">
@@ -69,7 +99,7 @@
                     <div class="info-heading">Email Us Here</div>
                     <div class="info-content">sapiensclinic@gmail.com</div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </nav>
 
@@ -91,7 +121,7 @@
         <div class="bottom-wrapper">
             <div class="banner-bottom">
                 <div class="banner-bottom-text">
-                    Expert wrist evaluation and surgical care by <span>Dr. Darshan Kumar A. Jain</span>, Orthopedic Hand
+                    Expert wrist evaluation and surgical care by <span>Dr. Darshan Kumar A. Jain</span>, orthopedic Hand
                     & Upper-Limb Specialist
                 </div>
                 <!-- appointment-form.component.html -->
@@ -134,13 +164,14 @@
             <h2>What Is Wrist Surgery?</h2>
             <p class="para" style="margin-top: 30px;">Wrist surgery is performed to treat conditions that cause
                 persistent wrist pain, instability, stiffness,
-                or reduced hand function. The aim of wrist surgery is to relieve pain, improve wrist movement, and
+                or reduced hand function. The aim of wrist surgery is to relieve pain, improve wrist movement and
                 restore strength and coordination of the hand and wrist.</p>
             <p class="para" style="margin-top: 30px;">Depending on the condition, wrist surgery may involve repairing
                 ligaments, relieving nerve pressure,
-                correcting joint alignment, or addressing joint damage. Not all wrist problems require surgery—careful
+                correcting joint alignment or addressing joint damage. Not all wrist problems require surgery-careful
                 evaluation is always the first step.</p>
         </div>
+
         <div class="section-2-right">
 
             <div class="anime">
@@ -160,14 +191,12 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
     </section>
 
     <!-- Symptoms -->
 
-    <section class="symptoms-section">\
+    <section class="symptoms-section">
 
         <h2>Symptoms – When to Visit <span>Sapiens Clinic</span></h2>
 
@@ -182,7 +211,7 @@
 
         </div>
 
-        <p class="para symptoms-para">An early consultation with Dr. Darshan Kumar A. Jain, an experienced orthopedic
+        <p class="para symptoms-para">An early consultation with <span>Dr. Darshan Kumar A. Jain</span>, an experienced orthopedic
             surgeon in Malleshwaram, Bangalore, Karnataka, helps determine the most appropriate wrist pain treatment.
         </p>
 
@@ -196,7 +225,7 @@
             <div class="section-4-top-left">
                 <!-- <img src="/advanced-wrist-surgery-by-dr-darshan-kumar-jain.png"
                     alt="Advanced wrist surgery performed by hand and wrist specialist Bangalore"> -->
-                <video class="your-classname" autoplay muted loop playsinline preload="metadata">
+                <video autoplay muted loop playsinline preload="metadata">
                     <source src="/wrist-surgery-video.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
@@ -207,9 +236,9 @@
                 <ul>
                     <li class="para">Have long-standing wrist pain not improving with medication or physiotherapy</li>
                     <li class="para">Experience restricted wrist or hand movement affecting daily activities</li>
-                    <li class="para">Have wrist joint instability, ligament injuries, or repeated strain injuries</li>
-                    <li class="para">Show structural wrist damage on X-rays, MRI, or other imaging</li>
-                    <li class="para">Require stable wrist function for work, sports, or lifestyle demands</li>
+                    <li class="para">Have wrist joint instability, ligament injuries or repeated strain injuries</li>
+                    <li class="para">Show structural wrist damage on X-rays, MRI or other imaging</li>
+                    <li class="para">Require stable wrist function for work, sports or lifestyle demands</li>
                 </ul>
             </div>
         </div>
@@ -226,7 +255,7 @@
                 <a href="https://www.sapiensclinic.com/dr-darshan-kumar-a-jain/carpal-tunnel-syndrome" target="_blank"
                     class="section-4-card">
                     <h3 class="card-heading">Carpal Tunnel Release Surgery</h3>
-                    <p class="card-content">Surgical relief of nerve compression causing wrist pain, numbness, or
+                    <p class="card-content">Surgical relief of nerve compression causing wrist pain, numbness or
                         tingling in the hand.</p>
                 </a>
             </div>
@@ -255,10 +284,11 @@
             <h2>Dr. Darshan Kumar A. Jain</h2>
             <h3 class="doc-designation">Orthopedic Hand & Microsurgery Specialist</h3>
             <p class="doc-para">Dr. Darshan Kumar A. Jain is an experienced orthopedic surgeon specializing in hand,
-                wrist, elbow, and upper-limb conditions. He is known for managing complex wrist disorders with a strong
-                focus on precision, safety, and functional recovery. His approach emphasizes accurate diagnosis, clear
-                communication, and recommending wrist surgery only when it is clinically necessary. Patients value his
-                calm consultations, ethical decision-making, and patient-first care at Sapiens Clinic, Malleshwaram,
+                wrist, elbow and upper-limb conditions. He is known for managing complex wrist disorders with a strong
+                focus on precision, safety and functional recovery.<br /> His approach emphasizes accurate diagnosis,
+                clear
+                communication and recommending wrist surgery only when it is clinically necessary. Patients value his
+                calm consultations, ethical decision-making and patient-first care at Sapiens Clinic, Malleshwaram,
                 Bangalore, Karnataka.</p>
             <ul class="about-doc-list">
                 <li>Specialized focus on <b>hand and wrist surgery</b></li>
@@ -280,7 +310,7 @@
             <div class="doc-float-card card-patients">
                 <div class="doc-circle-2">5000+</div>
                 <div class="doc-card-content">
-                    Patients treated across hand, wrist, and elbow conditions
+                    Patients treated across hand, wrist and elbow conditions
                 </div>
             </div>
         </div>
@@ -325,7 +355,7 @@
                 <h3>Recovery & Outcomes</h3>
                 <div class="para">What to Expect After Wrist Surgery</div>
                 <ul class="procedure-list">
-                    <li>Recovery timelines vary based on wrist condition, procedure type, and individual</li>
+                    <li>Recovery timelines vary based on wrist condition, procedure type and individual</li>
                     <li>Gradual improvement in wrist movement and strength over </li>
                     <li>Physiotherapy supports safe restoration of wrist and hand </li>
                     <li>Regular follow-ups help guide healing and </li>
@@ -402,34 +432,44 @@
 
     <section class="faqs-section">
 
-        <div class="faqs-left-side">
-            <h3>FAQs</h3>
 
-            <div class="accordion">
-                <div class="accordion-item" *ngFor="let faq of faqs; let i = index" [class.active]="activeIndex === i">
-                    <div class="accordion-header" (click)="toggle(i)">
-                        <div class="left">
-                            <span class="number" [class.active]="activeIndex === i">
-                                {{ (i + 1) }}
-                            </span>
-                            <div class="question">
-                                {{ faq.question }}
-                            </div>
-                        </div>
 
-                        <div class="icon">
-                            {{ activeIndex === i ? '×' : '+' }}
-                        </div>
-                    </div>
+        <div class="clinic-wrapper">
 
-                    <div class="accordion-body" *ngIf="activeIndex === i">
-                        {{ faq.answer }}
-                    </div>
+            <h3>Visit Us</h3>
+
+            <!-- Sapiens Clinic -->
+            <div class="clinic-card">
+                <div class="clinic-title logo-text">Sapiens Clinic</div>
+                <div class="clinic-time">
+                    Mon to Sat 12:00 Noon to 8:00 PM, Sunday Holiday
                 </div>
             </div>
 
+            <!-- Fortis Bannerghatta Road -->
+            <div class="clinic-card">
+                <div class="clinic-title">Fortis Hospital – Bannerghatta Road</div>
+                <div class="clinic-time">
+                    Tuesday, Thursday & Saturday,<br>
+                    10:30 AM to 1:00 PM
+                </div>
+                <div class="clinic-contact">
+                    For Appointments Call:
+                    <a href="tel:08066214444">080 6621 4444</a>
+                </div>
+            </div>
+
+            <!-- Fortis Cunningham Road -->
+            <div class="clinic-card">
+                <div class="clinic-title">Fortis Hospital – Cunningham Road</div>
+                <div class="clinic-time">
+                    Monday, Wednesday & Friday,<br>
+                    10:30 AM to 1:00 PM
+                </div>
+            </div>
 
         </div>
+
 
         <div class="faqs-right-side" #appointmentSection>
             <!-- Callback Request Form - Reusing the same form variables -->
@@ -467,6 +507,39 @@
     </section>
 
 
+    <!-- FAQs -->
+    <section class="faqs">
+        <div class="faqs-section-1">
+            <h3>FAQs</h3>
+
+            <div class="accordion">
+                <div class="accordion-item" *ngFor="let faq of faqs; let i = index" [class.active]="activeIndex === i">
+                    <div class="accordion-header" (click)="toggle(i)">
+                        <div class="left">
+                            <span class="number" [class.active]="activeIndex === i">
+                                {{ (i + 1) }}.
+                            </span>
+                            <div class="question" [class.active]="activeIndex === i">
+                                {{ faq.question }}
+                            </div>
+                        </div>
+
+                        <div class="icon">
+                            {{ activeIndex === i ? '×' : '+' }}
+                        </div>
+                    </div>
+
+                    <div class="accordion-body" *ngIf="activeIndex === i">
+                        {{ faq.answer }}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
     <!-- footer -->
 
     <section class="footer">
@@ -476,31 +549,7 @@
                 <img src="/sapiens-clinic-logo.png"
                     alt="Sapiens Clinic logo for wrist surgery in Malleshwaram Bangalore">
 
-                <div class="cta">
-                    <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21" fill="none">
-                            <g clip-path="url(#clip0_19016_1402)">
-                                <path
-                                    d="M10.7259 4.15351C10.6649 4.0951 10.5836 4.0625 10.4991 4.0625C10.4146 4.0625 10.3334 4.0951 10.2723 4.15351L2.72168 11.3666C2.68961 11.3973 2.6641 11.4342 2.64668 11.475C2.62927 11.5158 2.62032 11.5597 2.62037 11.6041L2.61914 18.3738C2.61914 18.7219 2.75742 19.0557 3.00355 19.3019C3.24968 19.548 3.5835 19.6863 3.93158 19.6863H7.87302C8.04706 19.6863 8.21397 19.6171 8.33703 19.4941C8.4601 19.371 8.52924 19.2041 8.52924 19.0301V13.4522C8.52924 13.3652 8.56381 13.2817 8.62534 13.2202C8.68687 13.1586 8.77033 13.1241 8.85735 13.1241H12.1385C12.2255 13.1241 12.3089 13.1586 12.3705 13.2202C12.432 13.2817 12.4666 13.3652 12.4666 13.4522V19.0301C12.4666 19.2041 12.5357 19.371 12.6588 19.4941C12.7818 19.6171 12.9487 19.6863 13.1228 19.6863H17.0626C17.4107 19.6863 17.7445 19.548 17.9906 19.3019C18.2367 19.0557 18.375 18.7219 18.375 18.3738V11.6041C18.3751 11.5597 18.3661 11.5158 18.3487 11.475C18.3313 11.4342 18.3058 11.3973 18.2737 11.3666L10.7259 4.15351Z"
-                                    fill="#EF7F1A" />
-                                <path
-                                    d="M20.1342 10.0136L17.0663 7.07864V2.62494C17.0663 2.4509 16.9972 2.28399 16.8741 2.16092C16.7511 2.03786 16.5841 1.96872 16.4101 1.96872H14.4414C14.2674 1.96872 14.1005 2.03786 13.9774 2.16092C13.8543 2.28399 13.7852 2.4509 13.7852 2.62494V3.93739L11.4097 1.66604C11.1874 1.44128 10.8568 1.3125 10.4996 1.3125C10.1436 1.3125 9.81384 1.44128 9.59155 1.66645L0.867897 10.0128C0.612791 10.2589 0.5808 10.6637 0.812938 10.9303C0.871232 10.9975 0.942608 11.0523 1.02272 11.0911C1.10284 11.1299 1.19002 11.152 1.27895 11.1561C1.36789 11.1602 1.45672 11.1461 1.54005 11.1148C1.62337 11.0834 1.69945 11.0354 1.76364 10.9737L10.274 2.8415C10.3351 2.78309 10.4163 2.75048 10.5008 2.75048C10.5853 2.75048 10.6666 2.78309 10.7276 2.8415L19.2388 10.9737C19.3642 11.094 19.5321 11.1596 19.7058 11.1562C19.8795 11.1528 20.0447 11.0807 20.1653 10.9557C20.4172 10.6948 20.3962 10.2642 20.1342 10.0136Z"
-                                    fill="#EF7F1A" />
-                            </g>
-                            <defs>
-                                <clipPath id="clip0_19016_1402">
-                                    <rect width="20.9991" height="20.9991" fill="white" />
-                                </clipPath>
-                            </defs>
-                        </svg>
-                    </div>
-                    <div class="contact-info">
-                        <div class="info-heading">Evening OPD Consultation</div>
-                        <div class="info-content">Mon to sat 4:00 PM to 7:30 PM</div>
-                    </div>
-                </div>
-
-                <div class="cta">
+                                <div class="cta" (click)="closeMenu()">
                     <div class="icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="27" height="27" viewBox="0 0 27 27" fill="none">
                             <path
@@ -513,6 +562,28 @@
                         <div class="info-content">+91 78925 56378</div>
                     </div>
                 </div>
+
+                <div class="cta" (click)="closeMenu()">
+                    <div class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                            <g clip-path="url(#clip0_19016_1421)">
+                                <path
+                                    d="M20.446 0.833008H2.55707C2.21819 0.833008 1.89318 0.96763 1.65355 1.20726C1.41392 1.44689 1.2793 1.7719 1.2793 2.11079V14.8886C1.2793 15.2275 1.41392 15.5525 1.65355 15.7921C1.89318 16.0317 2.21819 16.1663 2.55707 16.1663H20.446C20.7849 16.1663 21.1099 16.0317 21.3495 15.7921C21.5891 15.5525 21.7237 15.2275 21.7237 14.8886V2.11079C21.7237 1.7719 21.5891 1.44689 21.3495 1.20726C21.1099 0.96763 20.7849 0.833008 20.446 0.833008ZM19.4621 14.8886H3.61763L8.08985 10.263L7.16985 9.37495L2.55707 14.1475V3.0819L10.4985 10.985C10.7379 11.2229 11.0617 11.3565 11.3993 11.3565C11.7369 11.3565 12.0607 11.2229 12.3001 10.985L20.446 2.88384V14.0644L15.7437 9.36217L14.8429 10.263L19.4621 14.8886ZM3.39402 2.11079H19.411L11.3993 10.0777L3.39402 2.11079Z"
+                                    fill="#EF7F1A" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_19016_1421">
+                                    <rect width="23" height="18" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="contact-info">
+                        <div class="info-heading">Email Us Here</div>
+                        <div class="info-content">sapiensclinic@gmail.com</div>
+                    </div>
+                </div>
+
             </div>
 
             <div class="sec-2 sec">
@@ -546,8 +617,8 @@
             <div class="row-1">
                 <!-- <a href="">Privacy Policy</a>
                 <a href="">Terms of Use</a> -->
-                <a href="https://maps.app.goo.gl/qV7nqgmqEcpkXTeDA">Parking Location</a>
-                <a href="https://maps.app.goo.gl/AacBxcD9GM5bwSQAA">Clinic Map</a>
+                <a target="_blank" href="https://maps.app.goo.gl/qV7nqgmqEcpkXTeDA">Parking Location</a>
+                <a target="_blank" href="https://maps.app.goo.gl/AacBxcD9GM5bwSQAA">Clinic Map</a>
             </div>
             <p class="copyright">© 2026 All Rights Reserved</p>
         </div>
